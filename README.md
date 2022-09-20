@@ -8,18 +8,16 @@ localmente;
 - Drizzle: un set di librerie frontend per semplificare lo sviluppo di dApp;
 
 ### General Commands
-npx truffle create contract NameContract
-(crea contratto dove possiamo creare funzioni riferite al contratto - template)
+_npx truffle create contract NameContract_ (crea contratto dove possiamo creare funzioni riferite al contratto - template)
 
-dopo aver scritto contratto eseguo la migrazione
-npx truffle create migration NameContract
+dopo aver scritto contratto eseguo la migrazione:
+_npx truffle create migration NameContract_
 
 scrivere file migrazione:
-const NameContract = artifacts.require('NameContract')
+_const NameContract = artifacts.require('NameContract')
 module.exports = function (deployer) {
   deployer.deploy(NameContract)
-};
+};_
 
 crezione test:
-npx truffle create test NameContract
-
+_npx truffle create test NameContract_
